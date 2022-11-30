@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>test</title>
+		<link rel="stylesheet" href="style2.css">
+		<meta charset="Utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			
+				
+			form{
+				padding:0px 300px 0px 300px;
+				}
+			fieldset{
+				background-color:#8080803b;
+				}
+			body{
+				background-color:rgb(215,223,227)
+				font-size:25px;
+				}
+			div {
+				padding:10px;
+				}
+			
+			.index input{
+				float:right;
+			}
+			legend{
+					color:blue;
+					font-size:20px;
+					text-align:center;
+			}
+			.d-flex{
+				displaY:flex;
+				}
+			.d-flex input{
+				padding:0 8px;
+				}
+			.id{
+				text-align:center;
+			}
+			.id input{
+				text-align:center;
+			}
+			body{
+					background-color:#00feff2b;
+				}
+			
+		</style>
+</head>
+<body>
+	<div class="container">
+									  <!---form--->
+		<form  method="post" autocomplete="on">
+									<!---fieldset--->
+			<fieldset>
+								<!---lenged,lable,input-->
+								
+				<legend><b>apply now</b></legend>
+									<!--placeholder-->
+			<div class="index">
+				<div>
+					<label for="name">1.Enter your Name:</label>
+					<input type="taxt" name="iname"placeholder="Name" size="48" ><br>
+				</div>
+									<!--for,type,name-->
+				<div>
+					<label for="date of brith"> 2.Date of brith:</label>
+					<input type="date of brith" name="date of brith" placeholder="DD-MM-YYYY" size="48">
+				</div>	
+				<div>
+					<label for="icollage">3College Name:</label>
+					<input type="collage" name="college" placeholder="college name" size="48">
+				</div>
+				<div>
+					<label for="degree">4Degree:</label>
+					<input type="degree" name="degree" placeholder="degree" size="48">
+				</div>
+				<div>
+					<label for="course">5Course:</label>
+					<input type="course" name="course" placeholder="course" size="48">
+				</div>
+				<div>
+									<!---gender--->
+					<label for="gender">6. Gender(male/female):</label>
+					<input type="gender" name="gender"placeholder="Gender (male/female)" size="48"><br>
+				</div>
+									<!---email--->
+				<div>
+					<label for="email">7. Enter you email:</label>
+					<input for="email" name="iemail"  placeholder="Email" autocomplete="off"  size="48"><br>
+				</div>
+									<!---passward--->
+				<div>
+					<label for="password">8.Enter password :</label>
+					<input type="password" id="pwd" name="password" minlength="8" placeholder="password" size="48"><br>
+				</div>
+									<!---tel--->
+				<div>
+			      <label for="tel">9.Enter Mobile No:</label>
+			      <input type="tel" pattern="[1-9](10)" name="tel" placeholder="mobile no" size="48" >
+				</div>
+			</div>
+									<!---select,value--->
+			<div class="select">					
+				<div>
+					   <label for="inationaltity">10.Enter Your Nationality:</label>
+						<select id="nationality"> 
+						 <option value="Indian">Indian</option>
+						 <option value="French">French</option>
+						 <option value="America">America</option>
+						 <option value="Austalia">Australia</option>
+						 <option value="Italy">Italy</option></select>
+				</div> 
+									<!---cheackbox,id--->
+				<div class="d-flex">
+					<P>11.select your course</p>
+					<p>
+					<label for="course1"> html</label>
+					<input type="checkbox" id="course1" name="course1" value="html" checked>
+					</p><br>
+					<p>
+					<label for="course2"> css </label>
+					<input type="checkbox" id="course2" name="course2" value="css">
+					</p><br>
+					<P>
+					<label for="course3"> javascript </label>
+					<input type="checkbox" id="course3" name="course3" value="javascript">
+					</p><br>
+				</div>
+									<!---radio--->
+				<div>
+					<legend>12.Maritial Status</legend>	
+					<input type="radio" name="marri">
+					<label for="marri">married</label>
+					<input type="radio" name="marri">
+					<label for="marri">single</label>
+				</div><br><br>
+									<!---range,submit--->
+				<div>
+					<label for="vol">13.skill:</label>
+					<input type="range" id="vol" name="vol" min="0" max="50">
+					
+				</div><br><br>
+									<!---date & datetime-local--->
+				<div>
+					<label for="date of brith"> 2.Date of brith:</label>
+					<input type="date" name="date of brith" >
+				</div>	<br>
+				<div>
+				<label for="joindaytime">joining (date and time):</label>
+				<input type="datetime-local" id="joindaytime" name="birthdaytime">
+				</div>	<br>
+			</div>				<!---search--->
+				<div>
+					 <label for="gsearch">14.Exam center:</label>
+					 <input type="search" id="gsearch" name="gsearch">
+					 
+				</div><br><br>
+									<!---url--->
+				<div>
+					  <label for="homepage">15.enter your url:</label>
+					  <input type="url" id="homepage" name="homepage"><br><br>
+					 
+				</div>
+									<!---time--->
+				<div>
+						 <label for="appt">16.uploding time:</label>
+						 <input type="time" id="appt" name="appt"><br><br>
+		
+				</div>
+									<!---week--->
+				<div>
+						 <label for="week">17.Select a week:</label>
+						  <input type="week" id="week" name="week"><br><br>
+				</div>
+									<!---color--->
+				<div>
+					 <label for="favcolor">18.Select your favorite color:</label>
+					  <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
+					
+				</div>
+									<!--textaarea--->
+				<div>
+				<label for="address">19.Address:</label><br>
+	            <textarea type="address" name="address"cols="80" rows="5" placeholder="address"></textarea>
+	             <br><br>
+				 </div>
+				 <div class="id">
+									<!--file-->
+									<input type="file"><br><br>
+									
+					<p>20.i hereby declare that above furnished details are true.</p>
+					<label for="i-agree" class="boris">I agree</label>
+					<input type="checkbox" id="i-agree">
+					<br><br>
+									<!---reset,hidden--->
+					<div>
+						<label for="enter" class="boris">21.submit</label>
+						<input  type="submit" id="enter" required >
+						<button  type="button" id="enter" required onclick="alert ('google!')" autofocus>alert</button>
+						<input	type="reset" id="enter">
+						<input type="hidden" value="3487" id="enter">
+					</div>
+					<div style="text-align:center";>
+						<input type="image" src="submit.gif" alt="Submit" width="48" height="48">
+					</div>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>
