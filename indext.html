@@ -61,29 +61,29 @@
 			<div class="index">
 				<div>
 					<label for="name">1.Enter your Name:</label>
-					<input type="taxt" name="iname"placeholder="Name" size="48" ><br>
+					<input type="taxt" name="iname"  placeholder="Name"  size="48"  readonly ><br>
 				</div>
 									<!--for,type,name-->
 				<div>
 					<label for="date of brith"> 2.Date of brith:</label>
-					<input type="date of brith" name="date of brith" placeholder="DD-MM-YYYY" size="48">
+					<input type="date of brith" name="date of brith" placeholder="DD-MM-YYYY" size="48" required>
 				</div>	
 				<div>
-					<label for="icollage">3College Name:</label>
-					<input type="collage" name="college" placeholder="college name" size="48">
+					<label for="icollage"> 3.College Name:</label>
+					<input type="collage" name="college" pattern="[a-f](3)" placeholder="college name" size="48">
 				</div>
 				<div>
-					<label for="degree">4Degree:</label>
-					<input type="degree" name="degree" placeholder="degree" size="48">
+					<label for="degree"> 4.Degree:</label>
+					<input type="degree" name="degree" value="degree" size="48">
 				</div>
 				<div>
-					<label for="course">5Course:</label>
-					<input type="course" name="course" placeholder="course" size="48">
+					<label for="course"> 5.course:</label>
+					<input type="number" name="course" placeholder="course" size="48" step="2" max="30" min="20">
 				</div>
 				<div>
 									<!---gender--->
 					<label for="gender">6. Gender(male/female):</label>
-					<input type="gender" name="gender"placeholder="Gender (male/female)" size="48"><br>
+					<input type="gender" name="gender"placeholder="Gender (male/female)" size="48" disabled><br>
 				</div>
 									<!---email--->
 				<div>
@@ -93,7 +93,7 @@
 									<!---passward--->
 				<div>
 					<label for="password">8.Enter password :</label>
-					<input type="password" id="pwd" name="password" minlength="8" placeholder="password" size="48"><br>
+					<input type="password" id="pwd" name="password" minlength="8" maxlength="4"  placeholder="password" size="48"><br>
 				</div>
 									<!---tel--->
 				<div>
@@ -106,11 +106,12 @@
 				<div>
 					   <label for="inationaltity">10.Enter Your Nationality:</label>
 						<select id="nationality"> 
-						 <option value="Indian">Indian</option>
-						 <option value="French">French</option>
-						 <option value="America">America</option>
-						 <option value="Austalia">Australia</option>
-						 <option value="Italy">Italy</option></select>
+							<option value="Indian">Indian</option>
+							<option value="French">French</option>
+							<option value="America">America</option>
+							<option value="Austalia">Australia</option>
+							<option value="Italy">Italy</option>
+						</select>
 				</div> 
 									<!---cheackbox,id--->
 				<div class="d-flex">
@@ -139,7 +140,7 @@
 									<!---range,submit--->
 				<div>
 					<label for="vol">13.skill:</label>
-					<input type="range" id="vol" name="vol" min="0" max="50">
+					<input type="range" id="vol" name="vol" min="0" max="50" step="2">
 					
 				</div><br><br>
 									<!---date & datetime-local--->
@@ -148,20 +149,22 @@
 					<input type="date" name="date of brith" >
 				</div>	<br>
 				<div>
-				<label for="joindaytime">joining (date and time):</label>
-				<input type="datetime-local" id="joindaytime" name="birthdaytime">
+					<label for="joindaytime">joining (date and time):</label>
+					<input type="datetime-local" id="joindaytime" name="birthdaytime" min="2000-01-02">
 				</div>	<br>
+				<div>
+					<label for="joinmounth"> joining (mounth):</label>
+					<input type="month" id="joinmounth" name="joinmounth" max="1979-12-31">
+				</div><br>
 			</div>				<!---search--->
 				<div>
 					 <label for="gsearch">14.Exam center:</label>
-					 <input type="search" id="gsearch" name="gsearch">
-					 
+					 <input type="search" id="gsearch" name="gsearch"> 
 				</div><br><br>
 									<!---url--->
 				<div>
 					  <label for="homepage">15.enter your url:</label>
 					  <input type="url" id="homepage" name="homepage"><br><br>
-					 
 				</div>
 									<!---time--->
 				<div>
@@ -198,7 +201,7 @@
 					<div>
 						<label for="enter" class="boris">21.submit</label>
 						<input  type="submit" id="enter" required >
-						<button  type="button" id="enter" required onclick="alert ('google!')" autofocus>alert</button>
+						<input type="button" id="enter" onclick="alert('google!')" value="Click Me!" autofocus>
 						<input	type="reset" id="enter">
 						<input type="hidden" value="3487" id="enter">
 					</div>
